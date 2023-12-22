@@ -1,0 +1,36 @@
+body {
+  color: #333;
+  background: linear-gradient(#F5F7FD, #fff);
+  font-family: "Titillium Web", sans-serif;
+}
+body header .navbar {
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0196078431);
+}
+body header .navbar .container-fluid {
+  justify-content: center;
+}
+body header .navbar .container-fluid .navbar-collapse {
+  flex-grow: unset !important;
+  text-align: center;
+}
+body header .navbar .container-fluid .navbar-brand {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#8E2DE2, #333);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 1rem;
+}
+body header .navbar .nav-item .nav-link {
+  color: #333;
+}
+body main {
+  padding: 1rem 0;
+}
+body footer .material-symbols-outlined {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=app.css.map */
