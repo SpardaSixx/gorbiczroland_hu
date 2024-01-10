@@ -1,7 +1,10 @@
 <footer class="p-3">
     <div class="row">
         <div class="col-12 col-md-4 col-lg-4 text-center text-md-start">
-            c gorbiczroland.hu
+            <span class="material-symbols-outlined copyright">
+                copyright
+            </span>
+            gorbiczroland.hu
         </div>
 
         <div class="col-12 col-md-4 col-lg-4 text-center">
@@ -12,7 +15,7 @@
         </div>
 
         <div class="col-12 col-md-4 col-lg-4 text-center text-md-end">
-            <a href="" class="d-block">Sütik</a>
+            <a href="https://gdprmost.hu/cookie-tajekoztato" class="d-block">Sütik</a>
         </div>
     </div>
 </footer>

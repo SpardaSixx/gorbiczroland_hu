@@ -1,36 +1,82 @@
 body {
+  background-color: #eee;
   color: #333;
-  background: linear-gradient(#F5F7FD, #fff);
   font-family: "Titillium Web", sans-serif;
 }
+body header {
+  box-shadow: 0 0 1.4rem 0 rgba(0, 25, 90, 0.1), 0 0 0.4rem 0 rgba(0, 27, 91, 0.1);
+}
 body header .navbar {
-  background-color: #fff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0196078431);
-}
-body header .navbar .container-fluid {
-  justify-content: center;
-}
-body header .navbar .container-fluid .navbar-collapse {
-  flex-grow: unset !important;
-  text-align: center;
+  background-color: unset !important;
 }
 body header .navbar .container-fluid .navbar-brand {
   font-family: "Mr Dafoe", cursive;
   font-size: 2.5rem;
-  background: -webkit-linear-gradient(#8E2DE2, #333);
+  background: -webkit-linear-gradient(#4A00E0, #7303c0);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 1rem;
 }
 body header .navbar .nav-item .nav-link {
-  color: #333;
+  color: #333 !important;
+}
+body header .navbar .nav-item .nav-link:hover {
+  color: #7303c0 !important;
+}
+body header .navbar .dropdown-menu {
+  border: 0;
 }
 body main {
   padding: 1rem 0;
 }
+body main .page-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7303c0;
+}
+body main .material-symbols-outlined {
+  position: relative;
+  top: 7px;
+}
+body main .contactlink {
+  color: #333;
+  text-decoration: none;
+}
+body main .contactlink:hover {
+  text-decoration: underline;
+}
+body main .contactbg {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: -1rem;
+  filter: drop-shadow(10px 10px 4px #7303c0);
+}
+body footer {
+  background-color: #7303c0;
+  color: #eee;
+}
 body footer .material-symbols-outlined {
   font-size: 2.5rem;
+}
+body footer .copyright {
+  font-size: 1rem;
+  position: relative;
+  top: 5px;
+}
+body footer a {
+  color: #eee;
+  text-decoration: none;
+}
+body footer a:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+  .dropdown-item {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

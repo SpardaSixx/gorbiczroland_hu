@@ -1,25 +1,25 @@
 body{
+    background-color: #eee;
     color: #333;
-    background: linear-gradient(#F5F7FD, #fff);
     font-family: 'Titillium Web', sans-serif;
 
     header{
-        .navbar{
-            background-color: #fff;
-            box-shadow: 0 10px 10px 0 rgba(0,0,0,.0196078431);
+        box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
 
+        .navbar{
+            background-color: unset !important;
+            
             .container-fluid{
-                justify-content: center;
+                
 
                 .navbar-collapse{
-                    flex-grow: unset !important;
-                    text-align: center;
+                    
                 }
 
                 .navbar-brand{
                     font-family: 'Mr Dafoe', cursive;
                     font-size: 2.5rem;
-                    background: -webkit-linear-gradient(#8E2DE2, #333);
+                    background: -webkit-linear-gradient(#4A00E0, #7303c0);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -29,7 +29,19 @@ body{
 
             .nav-item{
                 .nav-link{
-                    color: #333;
+                    color: #333 !important;
+
+                    &:hover{
+                        color: #7303c0 !important;
+                    }
+                }
+            }
+
+            .dropdown-menu{
+                border: 0;
+
+                .dropdown-item{
+                    
                 }
             }
         }
@@ -37,11 +49,63 @@ body{
 
     main{
         padding: 1rem 0;
+
+        .page-title{
+            text-align: center;
+            font-size: 1.5rem;
+            color: #7303c0;
+        }
+
+        .material-symbols-outlined{
+            position: relative;
+            top: 7px;
+        }
+
+        .contactlink{
+            color: #333;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;  
+            }
+        }
+
+        .contactbg{
+            width: auto;
+            max-width: 100%;
+            margin-bottom: -1rem;
+            filter: drop-shadow(10px 10px 4px #7303c0);
+        }
     }
 
     footer{
+        background-color: #7303c0;
+        color: #eee;
+
         .material-symbols-outlined{
             font-size: 2.5rem;
         }
+
+        .copyright{
+            font-size: 1rem;
+            position: relative;
+            top: 5px;
+        }
+
+        a{
+            color: #eee;
+            text-decoration: none;
+
+            &:hover{
+                color: #eee;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .dropdown-item{
+        text-align: center;
     }
 }

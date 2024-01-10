@@ -4,13 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class BoozeController extends Controller
 {
     public function index(){
-        return view('home', [
+        return view('booze', [
             
         ]);
     }
-
-
 }
