@@ -1,33 +1,59 @@
 @extends('layouts.default')
  
 @section('content')
-    <h2>Kezdő whisk(e)y gyűjtő, haladó webfejlesztő, profi PlayStation kedvelő és gyűjtő</h2>
-    
-    <p>A menüpontok nagyjából lefedik a fontos dolgokat, de ha bármi kérdés merülne fel, az elérhetőségeim is fellelhetőek!</p>
-    
+    <div class="bg-content mb-4">
+        <h2>Kezdő whisk(e)y gyűjtő, haladó webfejlesztő, profi PlayStation kedvelő és gyűjtő</h2>
+        
+        <p>A menüpontok nagyjából lefedik a fontos dolgokat, de ha bármi kérdés merülne fel, az elérhetőségeim is fellelhetőek!</p>
+    </div>
+
     <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Stack</div>
+            <a href="{{route('stack')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_stack.jpg);">
+                    <span>Stack</span>
+                </div>
+            </a>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Referenciák</div>
+            <a href="{{route('references')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_references.jpg);">
+                    <span>Referenciák</span>
+                </div>
+            </a>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Konzolok</div>
+            <a href="{{route('consoles')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_consoles.jpg);">
+                    <span>Konzolok</span>
+                </div>
+            </a>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Játékok</div>
+            <a href="{{route('games')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_games.jpg);">
+                    <span>Játékok</span>
+                </div>
+            </a>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Booze</div>
+            <a href="{{route('booze')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_booze.jpg);">
+                    <span>Booze</span>
+                </div>
+            </a>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">
-            <div class="main-category" style="background-image: url(/img/main_stack.jpg);">Zene</div>
+            <a href="{{route('music')}}" class="link">
+                <div class="main-category" style="background-image: url(/img/main_music.jpg);">
+                    <span>Zene</span>
+                </div>
+            </a>
         </div>
     </div>
 @endsection

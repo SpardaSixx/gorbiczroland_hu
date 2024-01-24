@@ -50,12 +50,6 @@ body .hero h2 {
 }
 body main {
   padding: 1rem 0;
-  /* .block-elem{
-      box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
-      background-color: #232526;
-      border-radius: 8px;
-      padding: 1rem;
-  } */
 }
 body main .page-title {
   text-align: center;
@@ -112,6 +106,10 @@ body main .material-symbols-outlined {
   position: relative;
   top: 7px;
 }
+body main .link {
+  color: #eee;
+  text-decoration: none;
+}
 body main .contactlink {
   color: #eee;
   text-decoration: none;
@@ -130,6 +128,24 @@ body main .main-category {
   background-size: cover;
   background-position: center;
   margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+body main .main-category span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 0.25rem 0;
+  text-align: center;
+}
+body main .main-category:hover {
+  transform: scale(1.05);
+}
+body main .bg-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
 }
 body footer {
   border-top: 1px solid #333;
@@ -158,6 +174,9 @@ body footer a:hover {
   }
   body main .page-content .content-card .content-image {
     height: 8rem;
+  }
+  body .hero h2 {
+    padding: 1rem;
   }
 }
 

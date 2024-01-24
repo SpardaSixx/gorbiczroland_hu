@@ -134,6 +134,11 @@ body{
             top: 7px;
         }
 
+        .link{
+            color: #eee;
+            text-decoration: none; 
+        }
+
         .contactlink{
             color: #eee;
             text-decoration: none;
@@ -156,14 +161,28 @@ body{
             background-size: cover;
             background-position: center;
             margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+
+            span{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.85);
+                padding: .25rem 0;
+                text-align: center;
+            }
+
+            &:hover{
+                transform: scale(1.05);
+            }
         }
 
-        /* .block-elem{
-            box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
-            background-color: #232526;
-            border-radius: 8px;
+        .bg-content{
+            background: rgba(0, 0, 0, 0.5);
             padding: 1rem;
-        } */
+            border-radius: 8px;
+        }
     }
 
     footer{
@@ -199,5 +218,9 @@ body{
 
     body main .page-content .content-card .content-image{
         height: 8rem;
+    }
+
+    body .hero h2{
+        padding: 1rem;
     }
 }
