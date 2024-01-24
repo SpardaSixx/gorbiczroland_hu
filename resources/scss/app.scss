@@ -1,49 +1,64 @@
 body{
-    background-color: #eee;
-    color: #333;
+    background-image: url(/img/page_bg.jpg);
+    color: #9c968d;
     font-family: 'Titillium Web', sans-serif;
 
+    .webkit{
+        background-image: url(/img/headerbg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
     header{
-        box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
+        background: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #333;
 
         .navbar{
             background-color: unset !important;
-            
-            .container-fluid{
-                
-
-                .navbar-collapse{
-                    
-                }
-
-                .navbar-brand{
-                    font-family: 'Mr Dafoe', cursive;
-                    font-size: 2.5rem;
-                    background: -webkit-linear-gradient(#4A00E0, #7303c0);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    padding: 0 1rem;
-                }
-            }
 
             .nav-item{
                 .nav-link{
-                    color: #333 !important;
+                    color: #eee !important;
 
                     &:hover{
-                        color: #7303c0 !important;
+                        color: #9D50BB !important;
+                    }
+                }
+
+                .dropdown-menu{
+                    background-color: #333;
+
+                    .dropdown-item{
+                        color: #eee;
+                        //background-color: #111;
+
+                        &:hover{
+                            background-color: #333;
+                            color: #9c968d;
+                        }
                     }
                 }
             }
 
             .dropdown-menu{
                 border: 0;
-
-                .dropdown-item{
-                    
-                }
             }
+        }
+    }
+
+    .hero{
+        text-decoration: none;
+
+        h2{
+            font-family: 'Mr Dafoe', cursive;
+            font-size: 3rem;
+            background-image: linear-gradient(to bottom right, #6E48AA, #9D50BB);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 5rem;
+            text-align: center;
+            display: inline-block;
         }
     }
 
@@ -52,8 +67,66 @@ body{
 
         .page-title{
             text-align: center;
-            font-size: 1.5rem;
-            color: #7303c0;
+            font-size: 2rem;
+            color: #9c968d;
+            background: -webkit-linear-gradient(#9c968d, #eee);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .page-content{
+            .content-card{
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+
+                .content-image{
+                    background-size: cover;
+                    background-position: center;
+                    height: 15rem;
+                }
+
+                .content-info{
+                    background: linear-gradient(to right, #4A00E0, #7303c0);
+                    color: #eee;
+                    padding: .5rem;
+
+                    .content-title{
+                        height: 3rem;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    &.sitebuild{
+                        background: linear-gradient(to right, #89216B, #DA4453);
+                    }
+
+                    &.frontend{
+                        background: linear-gradient(to right, #2F0743, #41295a);
+                    }
+
+                    &.backend{
+                        background: linear-gradient(to right, #373B44, #4286f4);
+                    }
+
+                    &.dev{
+                        background: linear-gradient(to right, #159957, #155799);
+                    }
+
+                    &.tool{
+                        background: linear-gradient(to right, #799F0C, #ADD100);
+                    }
+                }
+            }
+
+            a{
+                text-decoration: none;
+            }
         }
 
         .material-symbols-outlined{
@@ -62,7 +135,7 @@ body{
         }
 
         .contactlink{
-            color: #333;
+            color: #eee;
             text-decoration: none;
 
             &:hover{
@@ -74,12 +147,27 @@ body{
             width: auto;
             max-width: 100%;
             margin-bottom: -1rem;
-            filter: drop-shadow(10px 10px 4px #7303c0);
+            //filter: drop-shadow(10px 10px 4px #a73737);
         }
+
+        .main-category{
+            height: 10rem;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 1.5rem;
+        }
+
+        /* .block-elem{
+            box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
+            background-color: #232526;
+            border-radius: 8px;
+            padding: 1rem;
+        } */
     }
 
     footer{
-        background-color: #7303c0;
+        border-top: 1px solid #333;
         color: #eee;
 
         .material-symbols-outlined{
@@ -107,5 +195,9 @@ body{
 @media only screen and (max-width: 992px){
     .dropdown-item{
         text-align: center;
+    }
+
+    body main .page-content .content-card .content-image{
+        height: 8rem;
     }
 }

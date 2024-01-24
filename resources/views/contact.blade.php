@@ -16,6 +16,14 @@
 
                 <div class="d-block text-center text-md-start">
                     <span class="material-symbols-outlined">
+                        alternate_email
+                    </span>
+
+                    <a href="mailto: info@gorbiczroland.hu" class="contactlink">info@gorbiczroland.hu</a>
+                </div>
+
+                <div class="d-block text-center text-md-start">
+                    <span class="material-symbols-outlined">
                         phone_iphone
                     </span>
 

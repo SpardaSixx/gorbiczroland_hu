@@ -1,46 +1,119 @@
 body {
-  background-color: #eee;
-  color: #333;
+  background-image: url(/img/page_bg.jpg);
+  color: #9c968d;
   font-family: "Titillium Web", sans-serif;
 }
+body .webkit {
+  background-image: url(/img/headerbg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 body header {
-  box-shadow: 0 0 1.4rem 0 rgba(0, 25, 90, 0.1), 0 0 0.4rem 0 rgba(0, 27, 91, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #333;
 }
 body header .navbar {
   background-color: unset !important;
 }
-body header .navbar .container-fluid .navbar-brand {
-  font-family: "Mr Dafoe", cursive;
-  font-size: 2.5rem;
-  background: -webkit-linear-gradient(#4A00E0, #7303c0);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0 1rem;
-}
 body header .navbar .nav-item .nav-link {
-  color: #333 !important;
+  color: #eee !important;
 }
 body header .navbar .nav-item .nav-link:hover {
-  color: #7303c0 !important;
+  color: #9D50BB !important;
+}
+body header .navbar .nav-item .dropdown-menu {
+  background-color: #333;
+}
+body header .navbar .nav-item .dropdown-menu .dropdown-item {
+  color: #eee;
+}
+body header .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #333;
+  color: #9c968d;
 }
 body header .navbar .dropdown-menu {
   border: 0;
 }
+body .hero {
+  text-decoration: none;
+}
+body .hero h2 {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 3rem;
+  background-image: linear-gradient(to bottom right, #6E48AA, #9D50BB);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5rem;
+  text-align: center;
+  display: inline-block;
+}
 body main {
   padding: 1rem 0;
+  /* .block-elem{
+      box-shadow: 0 0 1.4rem 0 rgba(0,25,90,.1),0 0 .4rem 0 rgba(0,27,91,.1);
+      background-color: #232526;
+      border-radius: 8px;
+      padding: 1rem;
+  } */
 }
 body main .page-title {
   text-align: center;
-  font-size: 1.5rem;
-  color: #7303c0;
+  font-size: 2rem;
+  color: #9c968d;
+  background: -webkit-linear-gradient(#9c968d, #eee);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+body main .page-content .content-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+body main .page-content .content-card .content-image {
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+}
+body main .page-content .content-card .content-info {
+  background: linear-gradient(to right, #4A00E0, #7303c0);
+  color: #eee;
+  padding: 0.5rem;
+}
+body main .page-content .content-card .content-info .content-title {
+  height: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+body main .page-content .content-card .content-info.sitebuild {
+  background: linear-gradient(to right, #89216B, #DA4453);
+}
+body main .page-content .content-card .content-info.frontend {
+  background: linear-gradient(to right, #2F0743, #41295a);
+}
+body main .page-content .content-card .content-info.backend {
+  background: linear-gradient(to right, #373B44, #4286f4);
+}
+body main .page-content .content-card .content-info.dev {
+  background: linear-gradient(to right, #159957, #155799);
+}
+body main .page-content .content-card .content-info.tool {
+  background: linear-gradient(to right, #799F0C, #ADD100);
+}
+body main .page-content a {
+  text-decoration: none;
 }
 body main .material-symbols-outlined {
   position: relative;
   top: 7px;
 }
 body main .contactlink {
-  color: #333;
+  color: #eee;
   text-decoration: none;
 }
 body main .contactlink:hover {
@@ -50,10 +123,16 @@ body main .contactbg {
   width: auto;
   max-width: 100%;
   margin-bottom: -1rem;
-  filter: drop-shadow(10px 10px 4px #7303c0);
+}
+body main .main-category {
+  height: 10rem;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.5rem;
 }
 body footer {
-  background-color: #7303c0;
+  border-top: 1px solid #333;
   color: #eee;
 }
 body footer .material-symbols-outlined {
@@ -76,6 +155,9 @@ body footer a:hover {
 @media only screen and (max-width: 992px) {
   .dropdown-item {
     text-align: center;
+  }
+  body main .page-content .content-card .content-image {
+    height: 8rem;
   }
 }
 

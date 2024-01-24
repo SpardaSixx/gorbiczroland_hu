@@ -25,14 +25,20 @@
     <link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
 <body>
-    @include('partials.header')
+    <div class="webkit">
+        @include('partials.header')
 
-    <main>
-        @yield('content')
-    </main>
+        @include('partials.hero')
 
-    @include('partials.footer')
+        <main>
+            <div class="container">
+                @yield('content')
+            </div>
+        </main>
 
-    @include('partials.scripts')
+        @include('partials.footer')
+
+        @include('partials.scripts')
+    </div>
 </body>
 </html>
