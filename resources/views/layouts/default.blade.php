@@ -19,26 +19,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
 <body>
-    <div class="webkit">
-        @include('partials.header')
+    @include('partials.header')
 
-        @include('partials.hero')
+    <main>
+        <div class="container">
+            @yield('content')
+        </div>
+    </main>
 
-        <main>
-            <div class="container">
-                @yield('content')
-            </div>
-        </main>
+    @include('partials.footer')
 
-        @include('partials.footer')
-
-        @include('partials.scripts')
-    </div>
+    @include('partials.scripts')
 </body>
 </html>

@@ -1,11 +1,23 @@
 @extends('layouts.default')
  
 @section('content')
-    <div class="bg-content mb-4">
-        <h2>Kezdő whisk(e)y gyűjtő, haladó webfejlesztő, profi PlayStation kedvelő és gyűjtő</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 position-relative">
+            <div class="home-hero">
+                <h2>Kezdő whisk(e)y gyűjtő, haladó webfejlesztő, profi PlayStation kedvelő és gyűjtő</h2>
         
-        <p>A menüpontok nagyjából lefedik a fontos dolgokat, de ha bármi kérdés merülne fel, az elérhetőségeim is fellelhetőek!</p>
+                <p>A menüpontok nagyjából lefedik a fontos dolgokat, de ha bármi kérdés merülne fel, az elérhetőségeim is fellelhetőek!</p>
+            
+                <a href="{{route('contact')}}" class="btn btn-purple">Kapcsolat</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <img src="/img/home.png" class="w-75">
+        </div>
     </div>
+
+    <h2 class="page-title my-5">Kategóriák</h2>
 
     <div class="row">
         <div class="col-12 col-md-4 col-lg-3">

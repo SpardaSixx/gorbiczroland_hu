@@ -24,4 +24,10 @@ class Booze extends Model
         'name',
         'size'
     ];
+
+    public function getImage(){
+        $img = '/img/booze/booze_'.$this->id.'.jpg';
+
+        return $img;
+    }
 }
