@@ -45,7 +45,7 @@ body header .navbar .dropdown-menu {
   border: 0;
 }
 body main {
-  padding: 7rem 0 1rem 0;
+  padding: 7rem 0 2rem 0;
 }
 body main .home-hero {
   position: absolute;
@@ -68,34 +68,89 @@ body main .page-content .content-card {
 body main .page-content .content-card .content-image {
   background-size: cover;
   background-position: center;
-  height: 15rem;
+  height: 10rem;
 }
 body main .page-content .content-card .content-info {
-  background: rgba(102, 126, 234, 0.85);
   color: #eee;
   padding: 0.5rem;
 }
 body main .page-content .content-card .content-info .content-title {
-  height: 3rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-body main .page-content .content-card .content-info.sitebuild {
+body main .page-content .content-card .content-info.static {
   background: linear-gradient(to right, #89216B, #DA4453);
 }
-body main .page-content .content-card .content-info.frontend {
+body main .page-content .content-card .content-info.laravel {
   background: linear-gradient(to right, #2F0743, #41295a);
 }
-body main .page-content .content-card .content-info.backend {
+body main .page-content .content-card .content-info.wordpress {
   background: linear-gradient(to right, #373B44, #4286f4);
 }
-body main .page-content .content-card .content-info.dev {
+body main .page-content .content-card .content-info.unas {
   background: linear-gradient(to right, #159957, #155799);
 }
-body main .page-content .content-card .content-info.tool {
-  background: linear-gradient(to right, #799F0C, #ADD100);
+body main .page-content .sheet {
+  background-color: #fff;
+  color: #333;
+  padding: 5rem 7.5rem;
+}
+body main .page-content .sheet .block .block-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+body main .page-content .sheet .block .stack {
+  color: #eee;
+  padding: 0.05rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0196078431);
+}
+body main .page-content .sheet .block .stack.frontend {
+  background-color: #764ba2;
+}
+body main .page-content .sheet .block .stack.backend {
+  background-color: #b12a5b;
+}
+body main .page-content .sheet .block .stack.other {
+  background-color: #0ba360;
+}
+body main .page-content .sheet .block .image {
+  background-image: url(/img/gorbicz_roland_cv.jpg);
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  border: 5px solid #764ba2;
+  z-index: 1;
+  position: relative;
+  left: 10px;
+}
+body main .page-content .sheet .block .title {
+  background-color: #764ba2;
+  color: #eee;
+  padding: 2rem;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+  bottom: 190px;
+}
+body main .page-content .sheet .block.main-title {
+  margin-bottom: -7rem;
+}
+body main .page-content .sheet .block.bg-alt {
+  background-color: #D2DAE4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+body main .page-content .sheet .cv-contact .fab {
+  font-size: 2rem;
+}
+body main .page-content .sheet .cv-contact .contact-data {
+  color: #333;
 }
 body main .page-content a {
   text-decoration: none;
@@ -108,37 +163,55 @@ body main .link {
   color: #eee;
   text-decoration: none;
 }
-body main .contactlink {
-  color: #333;
+body main .contact-link {
+  margin-bottom: 0.5rem;
+}
+body main .contact-link .contact-data {
+  color: #eee;
   text-decoration: none;
-}
-body main .contactlink:hover {
-  text-decoration: underline;
-}
-body main .contactbg {
-  width: auto;
-  max-width: 100%;
-  margin-bottom: -1rem;
-}
-body main .main-category {
-  height: 10rem;
+  background-color: #764ba2;
+  padding: 0.25rem 0.5rem;
   border-radius: 8px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 1.5rem;
-  position: relative;
-  overflow: hidden;
+  margin: 0.5rem auto;
+  width: 25%;
 }
-body main .main-category span {
-  position: absolute;
-  bottom: 0;
+body main .contact-link .contact-data:hover {
+  background-color: #3B2551;
+}
+body main .stack-type {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0196078431);
+}
+body main .stack-type .stack {
+  color: #eee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0196078431);
+}
+body main .stack-type .stack.frontend {
+  background-color: #764ba2;
+}
+body main .stack-type .stack.backend {
+  background-color: #b12a5b;
+}
+body main .stack-type .stack.other {
+  background-color: #0ba360;
+}
+body main .swiper {
   width: 100%;
-  background: rgba(102, 126, 234, 0.85);
-  padding: 0.25rem 0;
-  text-align: center;
+  padding-bottom: 50px;
 }
-body main .main-category:hover {
-  transform: scale(1.05);
+body main .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+body main .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 body footer {
   border-top: 1px solid #333;
@@ -174,12 +247,6 @@ body .btn-purple:hover {
   .dropdown-item {
     text-align: center;
   }
-  body main .page-content .content-card .content-image {
-    height: 8rem;
-  }
-  body .hero h2 {
-    padding: 1rem;
-  }
   body main .home-hero {
     position: unset;
     top: unset;
@@ -187,6 +254,42 @@ body .btn-purple:hover {
   }
   body header .navbar .nav-item .nav-link {
     padding: 0.5rem;
+  }
+  .mb-sm {
+    margin-bottom: 1rem;
+  }
+  .contactlink {
+    width: 100% !important;
+  }
+  .sheet {
+    padding: 0.5rem !important;
+  }
+  .sheet .block {
+    padding: 0.5rem;
+  }
+  .sheet .block .title {
+    bottom: unset !important;
+    padding: 1rem !important;
+  }
+  .sheet .block .image {
+    left: unset !important;
+    top: 15px;
+    margin: auto;
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  .sheet .block.main-title {
+    margin-bottom: 1rem !important;
+  }
+  .sheet .block td {
+    vertical-align: top;
+  }
+  .swiper .swiper-slide {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .desktop-only {
+    display: none;
   }
 }
 

@@ -2,12 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DevController;
-use App\Http\Controllers\PsController;
-use App\Http\Controllers\BoozeController;
-use App\Http\Controllers\MusicController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +15,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+/* Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('dev')->group(function () {
     Route::get('/stack', [DevController::class, 'stack'])->name('stack');
@@ -34,6 +29,14 @@ Route::prefix('ps')->group(function () {
 
 Route::get('/booze', [BoozeController::class, 'index'])->name('booze');
 
-Route::get('/music', [MusicController::class, 'index'])->name('music');
+Route::get('/music', [MusicController::class, 'index'])->name('music'); */
 
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/', [MainController::class, 'home'])->name('home');
+
+Route::get('/stack', [MainController::class, 'stack'])->name('stack');
+
+Route::get('/references', [MainController::class, 'references'])->name('references');
+
+Route::get('/cv', [MainController::class, 'cv'])->name('cv');
+
+Route::get('/contact', [MainController::class, 'contact'])->name('contact');

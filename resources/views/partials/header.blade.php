@@ -9,41 +9,18 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <!-- DEV -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="devDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dev
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="devDropdown">
-                            <li><a class="dropdown-item" href="{{route('references')}}">Referenciák</a></li>
-                            <li><a class="dropdown-item" href="{{route('stack')}}">Stack</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- PS -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="psDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PS
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="psDropdown">
-                            <li><a class="dropdown-item" href="{{route('consoles')}}">Konzolok</a></li>
-                            <li><a class="dropdown-item" href="{{route('games')}}">Játékok</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Booze -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('booze')}}">Booze</a>
+                        <a class="nav-link" href="{{route('stack')}}">Stack</a>
                     </li>
 
-                    <!-- Music -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('music')}}">Zene</a>
+                        <a class="nav-link" href="{{route('references')}}">Referenciák</a>
                     </li>
 
-                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('cv')}}">CV</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('contact')}}">Kapcsolat</a>
                     </li>

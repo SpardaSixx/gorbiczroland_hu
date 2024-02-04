@@ -24,4 +24,10 @@ class Reference extends Model
         'type',
         'year'
     ];
+
+    public function getImage(){
+        $image = '/img/reference/reference_'.$this->id.'.png';
+
+        return $image;
+    }
 }
